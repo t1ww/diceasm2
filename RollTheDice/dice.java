@@ -59,7 +59,7 @@ public class dice {
                      "\n           /             / |back = " + back +
                      "\n          /___top = " + top + "__ /  |" +
                      "\n         |             |   |" +
-                     "\n         |             |   |right = " + right +
+                     "\n         |             | right = " + right +
                      "\nleft = " + left + " |  front = " + front + "  |  /" +
                      "\n         |             | /" +
                      "\n         |_____________|/" +
