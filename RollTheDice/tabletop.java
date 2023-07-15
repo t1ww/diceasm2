@@ -16,10 +16,10 @@ public class tabletop {
         System.out.println("put a squence of rotation ex.(fblrb)");
         String str =   "f   ; roll the dice forward" +
                      "\nb   ; roll the dice backward" +
-                     "\nl   ; roll the dice to the left (top pivot)" +
-                     "\nr   ; roll the dice to the right (top pivot)" +
-                     "\nc   ; roll the dice clock-wise (front pivot)" +
-                     "\nd   ; roll the dice counter-clock-wise (front pivot)"
+                     "\nl   ; roll the dice to the left (front pivot)" +
+                     "\nr   ; roll the dice to the right (front pivot)" +
+                     "\nc   ; roll the dice clock-wise (top pivot)" +
+                     "\nd   ; roll the dice counter-clock-wise (top pivot)"
                      ;
         System.out.println(str);
         // recieve input

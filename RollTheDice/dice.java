@@ -17,41 +17,33 @@ public class dice {
         back = temp;
     } 
     public void left(){
-        int temp = front;
-        front = right;
-        right = back;
-        back = left;
-        left = temp;
-    } 
-    public void right(){
-        int temp = front;
-        front = left;
-        left = back;
-        back = right;
-        right = temp;
-    } 
-    public void cw(){//
         int temp = top;
         top = left;
         left = bottom;
         bottom = right;
         right = temp;
     } 
-    public void ccw(){//
+    public void right(){
         int temp = top;
         top = right;
         right = bottom;
         bottom = left;
         left = temp;
     } 
-    public void reset(){
-        top = 1;
-        front = 2; 
-        left = 3;
-        right = 4; 
-        back = 5;
-        bottom = 6;
-    }
+    public void cw(){//
+        int temp = front;
+        front = right;
+        right = back;
+        back = left;
+        left = temp;
+    } 
+    public void ccw(){//
+        int temp = front;
+        front = left;
+        left = back;
+        back = right;
+        right = temp;
+    } 
     /// to string
     public String toString(){
         String str = "\n             ______________" +
