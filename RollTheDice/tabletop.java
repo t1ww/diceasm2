@@ -24,8 +24,9 @@ public class tabletop {
         System.out.println(str);
         // recieve input
         System.out.print(":> ");
-        str = scan.nextLine();
+        str = scan.nextLine().toLowerCase();
         /// check each string char
+        int falseCount = 0;
         for (int i = 0; i < str.length(); i++) {
             String c = String.valueOf(str.charAt(i));
             switch(c){
@@ -48,12 +49,16 @@ public class tabletop {
                     d1.ccw();
                 break;
                 default :
+                    falseCount++;
                 break;
             }
         }
         /// print output
         System.out.print("after the rotation ; ");
         System.out.println(d1.toString());
+        if(falseCount != 0){
+            System.out.println("!!! Attention !!! : " + falseCount + " false char(s) captured\nplease check your sequence of input\nthe output was proceeded normally avoiding the invalid command char\n!!! Attention !!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
         /// end
         scan.close();
         System.out.println("program ends ---");
